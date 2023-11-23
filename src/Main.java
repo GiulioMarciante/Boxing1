@@ -16,27 +16,25 @@ public class Main {
         char character = '&';
         Character objectChar = character;
 
-        sumOfInt(numberInt,7);
+        System.out.println("result of sum: " + sumOfInt(numberInt,7));
 
-        charPrint(character);
+        System.out.println("Character: " + charPrint(character));;
 
-        sumOfInteger(objectInt,9);
+        System.out.println("result of sum: " + sumOfInteger(objectInt,9));
 
-        objectCharPrint(objectChar);
+        System.out.println("Character: " + objectCharPrint(objectChar));
 
     }
-    public static void sumOfInt(int n1, int n2){
-        int sum = n1+n2;
-        System.out.println("result of sum: " + sum);
+    public static int sumOfInt(int n1, int n2){
+        return  n1+n2;
     }
-    public static void charPrint(char character){
-        System.out.println("Character: " + character);
+    public static char charPrint(char character){
+        return character;
     }
-    public static void sumOfInteger(Integer number1, Integer number2){
-        int sum =number1+number2;
-        System.out.println("result of sum: " + sum);
+    public static Integer sumOfInteger(Integer number1, Integer number2){
+        return number1+number2;
     }
-    public static void objectCharPrint(Character characterObj){
-        System.out.println("Character: " + characterObj);
+    public static Character objectCharPrint(Character characterObj){
+        return characterObj;
     }
 }
